@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vladislav Fomin — Flutter Developer</title>
+  <meta name="description" content="Портфолио Flutter-разработчика: проекты, опыт, контакты." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta property="og:title" content="Vladislav Fomin — Flutter Developer" />
+  <meta property="og:description" content="Портфолио Flutter-разработчика: проекты, опыт, контакты." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://username.github.io/" />
+  <meta property="og:image" content="https://username.github.io/assets/avatar.jpg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container row">
+      <div class="brand">
+        <a href="#top" class="logo">VF</a>
+        <nav class="nav">
+          <a href="#projects">Проекты</a>
+          <a href="#experience">Опыт</a>
+          <a href="#skills">Навыки</a>
+          <a href="#contact">Контакты</a>
+        </nav>
+      </div>
+      <a class="cta" href="mailto:you@example.com">Связаться</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- hero -->
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Vladislav Fomin</h1>
+        <p class="subtitle">Flutter Developer • Bishkek</p>
+        <p class="lead">
+          Делаю быстрые и надёжные мобильные приложения на Flutter.
+          Интересуюсь архитектурой, DI, генераторами кода и качеством UI.
+        </p>
+        <div class="actions">
+          <a class="btn" href="#projects">Смотреть проекты</a>
+          <a class="btn ghost" href="https://github.com/username" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/avatar.jpg" alt="Фото разработчика" />
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section id="projects" class="section container">
+      <h2>Проекты</h2>
+
+      <article class="card">
+        <div class="card-body">
+          <h3>Taxpayer Application Mobile</h3>
+          <p>Мобильный «Кабинет налогоплательщика». Редизайн, рефакторинг, платёжные модули, карточные списки с свайп-действиями.</p>
+          <ul class="tags">
+            <li>Flutter</li><li>Chopper</li><li>Freezed</li><li>GetIt</li>
+          </ul>
+          <div class="links">
+            <a href="https://github.com/username/taxpayer-app" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="#" target="_blank" rel="noreferrer">Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <h3>Nurkeldi Mobile Admin</h3>
+          <p>Админ-клиент: DI, токен-авторизация, interceptors, кастомный scaffold с лоадером/повтором.</p>
+          <ul class="tags">
+            <li>Flutter</li><li>DI</li><li>Auth</li>
+          </ul>
+          <div class="links">
+            <a href="https://github.com/username/nurkeldi-mobile-admin" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Добавляй ещё карточки по образцу -->
+    </section>
+
+    <!-- experience -->
+    <section id="experience" class="section container">
+      <h2>Опыт</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="time">2022 → 2024</div>
+          <div class="content">
+            <h3>Lead Developer — CDT (Мэрия Бишкек)</h3>
+            <p>Руководство разработкой, внедрение CI/CD, сопровождение мобильных сервисов.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="time">2022</div>
+          <div class="content">
+            <h3>Flutter Dev — BrandHouse</h3>
+            <p>Поддержка и разработка приложений, оптимизация кода и ассетов.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skills" class="section container">
+      <h2>Навыки</h2>
+      <ul class="skills">
+        <li>Flutter • Dart</li>
+        <li>Chopper • Freezed • build_runner</li>
+        <li>GetIt • DI • interceptors</li>
+        <li>REST • Swagger • Auth</li>
+        <li>Clean Architecture • Testing</li>
+      </ul>
+    </section>
+
+    <!-- contacts -->
+    <section id="contact" class="section container">
+      <h2>Контакты</h2>
+      <p>
+        Email: <a href="mailto:you@example.com">you@example.com</a> ·
+        GitHub: <a href="https://github.com/username" target="_blank" rel="noreferrer">@username</a> ·
+        Telegram: <a href="https://t.me/your_handle" target="_blank" rel="noreferrer">@your_handle</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © <span id="year"></span> Vladislav Fomin
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
